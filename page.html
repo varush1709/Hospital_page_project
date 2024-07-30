@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Hospital's</title>
+    <link rel="icon" href="icon.jpg">
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  background-color: #2d7d96;
+  color: #fffffffb;
+  padding: 10px;
+  width:-webkit-fill-available;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+section {
+  padding: 100px;
+  background-color: #f8f8f8;
+  margin-bottom: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h3{
+  background-image: url(https://www.westforthospital.org/wp-content/uploads/2016/02/mission-vision.jpg);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+section p {
+  font-size: 17px;
+  margin-bottom: 20px;
+  font-style: italic; font-family: publico;
+}
+#about {
+  padding: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-images {
+  display: flex;
+  justify-content: center;
+}
+
+.about-images img {
+  width: 300px;
+  height: auto;
+  margin: 0 10px;
+}
+#professionals {
+  padding: 20px;
+}
+
+.professional {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.professional img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.professional h3 {
+  margin-bottom: 5px;
+}
+
+.professional p {
+  margin: 0;
+  line-height: 1.5;
+}
+.search-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#search-input {
+  padding: 5px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+#search-button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.text-box{
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>  
+
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>|
+            <li><a href="#about">About Us</a></li>|
+            <li><a href="#departments">Departments</a></li>|
+            <li><a href="#services">Services</a></li>|
+            <li><a href="#doctors">Doctors and Staff</a></li>|
+            <li><a href="#patient">Patient Information and Support</a></li>|
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main>
+       <section id="home">
+       <h1>Welcome to ABC Hospital's</h1>
+       <p>Providing quality healthcare services since 2001.</p>
+       <h3>Vision</h3>
+       <p style="font-style: italic; font-family: publico; font-size: large;">
+        To bring healthcare of International standards to this region, to evolve as a premier hospital in the country and to TOUCH the lives of the people we serve through excellence in clinical care, quality and commitment.
+      </p>
+       <h3>Mission Statement</h3>
+       <p style="font-style: italic; font-family: publico; font-size: large;">
+        • To provide Hope, Care and Cure. <br>
+        • To provide compassionate, accessible, high quality, cost effective healthcare to one all. <br>
+        • To serve with a patient's first motto and to work towards a patient- centered care.
+      </p>
+       </section>
+
+      <section id="about">
+
+        <h1>About us</h1>
+        <div class="about-content">
+          <div class="about-text">
+        <h3 style="text-align: center; background-image: url(https://www.shutterstock.com/image-photo/doctor-hospital-corridor-unfocused-background-260nw-542947291.jpg);">History</h3>
+        <p>ABC Hospital was started in the year 2001 to serve public and to develop Health care industry of our country.
+          Our hospital has Highly experienced Doctors and Equipments that will be available by 24/7 since years. <br>
+        We have served over years and made good relation with all other helping hands who support healthcare Industries</p>
+      </div>
+
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search departments">
+        <button type="button" id="search-button">Search</button>
+      </div>
+
+      <h3>ABC Infrastructure</h3>
+      <div class="about-images">
+        <img src="hospital img1.jpg" alt="Hospital Exterior">
+        <img src="hospital img2.jpg" alt="Hospital Interior">
+      </div>
+
+      <section id="professionals">
+      <h3>ABC Doctors, Surgeons, and Specialists.</h3>
+    <div class="professionals">
+      <img src="MDr1.jpg" alt="Doctor">
+    <h3>Dr. John Smith</h3>
+    <p>Specialty: Cardiology</p>
+    <p>Experience: 15 years</p>
+    <p>Education: MD, ABC Medical School</p>
+  </div>
+
+  <div class="professionals">
+    <img src="FDr1.jpg" alt="Doctor">
+  <h3>Dr. Meera Sen</h3>
+  <p>Specialty: Neurology</p>
+  <p>Experience: 12 years</p>
+  <p>Education: MD, ABC Medical School</p>
+</div>
+  </section>
+      </section>
+    
+      <section id="departments">
+        <h3>Departments</h3>
+        <nav class="departments">
+        <ul>
+          <li><a href="#Cardiology">1.Cardiology</a> </li>
+          <li><a href="#Neurology">2.Neurology</a> </li>
+          <li><a href="#Pediatrics">3.Pediatrics</a> </li>
+        </ul>
+      </nav>
+
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search departments">
+        <button type="button" id="search-button">Search</button>
+      </div>
+
+      <div id="Cardiology">
+        <h2>Cardiology services</h2>
+        <p>Cardiology services will be provided based on Doctor's recommendation</p>
+        <h1>Head of the Cardiology department:</h1>
+        <p>Dr. John Smith,MD. Cardiology Specialist <br> Ph: 91203*****</p>
+      </div>
+
+      <div id="Neurology">
+        <h2>Neurology services</h2>
+        <p>Neurology services will be provided based on Doctor's recommendation</p>
+        <h1>Head of the Neurology department:</h1>
+        <p>Dr. Meera Sen,MD. Neurology Specialist <br> Ph: 91223*****</p>
+      </div>
+
+      <div id="Pediatrics">
+        <h2>Pediatrics services</h2>
+        <p>Pediatrics services will be provided based on Doctor's recommendation</p>
+        <h1>Head of the Pediatrics department:</h1>
+        <p>Dr. Seenu,MD. Pediatrics Specialist <br> Ph: 91209*****</p>
+      </div>
+
+      </section>
+    
+      <section id="services">
+        <h3>Services Offered by ABC</h3>
+        <h4>Diagnostics:</h4>
+        <p>Scans the patient body and gives a detaild report.</p>
+        <h5>Technologies used:</h5>
+        <p>ultrasonography, x-rays, MRIs, and CT scans </p>
+
+        <h4>Surgeries:</h4>
+        <p>Open surgery and Minimally invasive surgery are available care of patient will be taken by professionals and nurses</p>
+        <h5>Different surgries:</h5>
+        <p>1.Carotid endarterectomy.<br>2.Cataract surgery.<br>3.Appendectomy.<br>4.Cholecystectomy. etc.</p>
+      </section>
+    
+      <section id="doctors">
+        <h3>Doctors and Staff:</h3>
+        
+        <section id="professionals">
+          <h2>ABC Hospital's Doctors, Surgeons, and Specialists:</h2>
+          <h5>Dooctors:</h5>
+        <div class="text-box">
+        <h4>Dr. John Smith</h4>
+        <p>Education: MD, ABC Medical School</p>
+        <p>Specialty: Cardiology</p>
+        <p>Experience: 15 years</p>
+        <p>Phn: 9100000000</p>
+      </div>
+
+      <div class="text-box">
+        <h4>Dr. Meera sen</h4>
+        <p>Education: MD, ABC Medical School</p>
+        <p>Specialty: Neurology</p>
+        <p>Experience: 12 years</p>
+        <p>Phn: 9100000000</p>
+      </div>
+
+      <div class="text-box">
+        <h4>Dr. Seenu</h4>
+        <p>Education: MD, ABC Medical School</p>
+        <p>Specialty: Pediatrics</p>
+        <p>Experience: 10 years</p>
+        <p>Phn: 9100000000</p>
+      </div>
+
+      <div class="text-box">
+        <h4>Dr. Homesh</h4>
+        <p>Education: MBBS, ABC Medical School</p>
+        <p>Specialty: ENT</p>
+        <p>Experience: 11 years</p>
+        <p>Phn: 9100000000</p>
+      </div>
+
+      <div class="text-box">
+        <h4>Dr. Lokesh</h4>
+        <p>Education: MBBS, ABC Medical School</p>
+        <p>Specialty: Dermatologist</p>
+        <p>Experience: 10 years</p>
+        <p>Phn: 9100000000</p>
+      </div>
+      <h5>Staff:</h5>
+      <div class="text-box">
+        <h4>Mr. Kumar</h4>
+        <p>Education: BSC, ABC Medical School</p>
+        <p>Specialty: General check</p>
+        <p>Experience: 5 years</p>
+        <p>Phn: 9100000000</p>
+      </div>
+
+      <div class="text-box">
+        <h4>Mr. Anup</h4>
+        <p>Education: BSC, ABC Medical School</p>
+        <p>Specialty: General check</p>
+        <p>Experience: 6 years</p>
+        <p>Phn: 9100000000</p>
+      </div>
+
+      <div class="text-box">
+        <h4>Mr. Venu</h4>
+        <p>Education: BSC, ABC Medical School</p>
+        <p>Specialty: Helper</p>
+        <p>Experience: 5 years</p>
+        <p>Phn: 9100000000</p>
+      </div>
+      </section>
+
+      <section id="patient">
+        <h3> Patient Information and Support</h3>
+        <h4>Hospital visiting Hours</h4>
+        <p>Regular days: From 6:00am to 12:00am</p>
+        <p>on Sundays From 8:00am to 10:00pm</p>
+        <p>Book your Appointment by contacting to the Numbers provided in Doctors page or call Hospital any time using landline number provided</p>
+        <h5>Patient Guide:</h5>
+        <p>Visit only in allocated Hours if you miss the Appointment try to reapply for Appointment</p>
+        <p>Fee will be depended on the services and basic consulting fee is Rs.1200/-</p>
+        <h5>Insurance Details:</h5>
+        <p>Insurance will be Provided patient needs to fill the form with basic details and choose the plan</p>
+        <h5>For more info call and clear your FAQ's. ph: 9100000000 or visit our page www.ABChospitals.com</h5>
+      </section>
+    
+      <section id="contact">
+        <h3>Contact us</h3>
+        <h4>Contact Details:</h4>
+        <p>Phno.: 91000000020, 91000003000</p>
+        <h4>Address:</h4>
+        <p>Abc hospotal building,Secunderabad,near D-mart,opp. to kumar cafe,Hyderabad,Telangana-500012 </p>
+        <h4>Phone Numbers:</h4>
+        <p>phn: 9100000000, 91000000000, 9100000000 <br>
+        landline no.: 040-123-423 </p>
+        <h4>Email add:</h4>
+        <p>abchospitals@gmail.com</p>
+        
+      </section>
+      
+    </main>
+
+    <footer>
+      <p>&copy; 2001 ABC Hospital Services Website. All rights reserved.</p>
+     </footer>
+</body>
+</html>
