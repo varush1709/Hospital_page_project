@@ -13,6 +13,13 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/varush1709/Hospital_page_project.git'
             }
         }
+        stage('Unzip') {
+            steps {
+                // Ensure the unzip command is available and unzip the file
+                sh 'which unzip || sudo apt-get install unzip -y'
+                sh 'unzip aws.zip -d website'
+            }
+        }
         
         stage('Upload to S3') {
             steps {
